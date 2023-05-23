@@ -1,41 +1,12 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
 
+// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+// then press Enter. You can now see whitespace characters in your code.
 public class Main {
-    String nome;
-
     public static void main(String[] args) {
-        List Lnome = new ArrayList<>();
-//        String nome = "Carol, Bernardo, Andre, David, Elena";
-        System.out.println("PARTE 1");
-        Scanner leia = new Scanner(System.in);
-        System.out.print("Quais os nomes?(nome,) ");
-        String nome = leia.nextLine();
-        String[] nomeSep = nome.split(",\\s");
-        for (int x = 0; x < nomeSep.length; x++) {
-            Lnome.add(nomeSep[x]);
-        }
-        System.out.print("Lista por ordem original: ");
-        for (int x = 0; x < Lnome.size(); x++) {
-            System.out.print(Lnome.get(x));
-            if (x < (Lnome.size() - 1)) {
-                System.out.print(", ");
-
-            } else System.out.print(".\n");
-        }
-
-        Collections.sort(Lnome);
-        System.out.print("Lista por ordem alfabetica: ");
-        for (int y = 0; y < Lnome.size(); y++) {
-            System.out.print(Lnome.get(y));
-            if (y < (Lnome.size() - 1)) {
-                System.out.print(", ");
-
-            } else System.out.print(".\n");
-        }
-
-        System.out.println();
-//---------------------------------------------------------------------------------//
-        System.out.println("PARTE 2");
         List Mnome = new ArrayList<>();
         List Fnome = new ArrayList<>();
         List Inome = new ArrayList<>();
@@ -57,7 +28,7 @@ public class Main {
                 Mnome.add(temp2[0]);
             } else if (temp2[1].equals("f")){
                 Fnome.add(temp2[0]);
-                
+
             }
 
         }
@@ -67,8 +38,5 @@ public class Main {
         System.out.println("Lista original: " + Inome);
         System.out.println("Nomes femininos: " + Fnome);
         System.out.println("Nomes masculinos: " + Mnome);
-
+        }
     }
-
-
-}
