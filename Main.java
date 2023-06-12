@@ -1,5 +1,6 @@
 import java.util.*;
 
+
 public class Main {
     String nome;
 
@@ -57,7 +58,7 @@ public class Main {
                 Mnome.add(temp2[0]);
             } else if (temp2[1].equals("f")){
                 Fnome.add(temp2[0]);
-                
+
             }
 
         }
