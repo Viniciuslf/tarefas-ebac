@@ -1,15 +1,10 @@
-/**
- * 
- */
+
 package br.com.bdalmagro.dao;
 
 import br.com.bdalmagro.dao.generic.GenericDAO;
 import br.com.bdalmagro.domain.Cliente;
 
-/**
- * @author Bruna.D
- *
- */
+
 public class ClienteDAO extends GenericDAO<Cliente, Long> implements IClienteDAO {
 
 	public ClienteDAO() {
